@@ -3,6 +3,9 @@
     margin: 0;
     padding: 0;
 }
+:root {
+    --main: #f5f5f5
+}
 
 body {
     display: flex;
@@ -13,4 +16,86 @@ body {
     background-attachment: fixed;
     background-size: cover;
     transition: .1s;
+}
+card {
+    margin: 0 25px;
+    width: 380px;
+    padding: 20px 30px;
+    color: var(--main);
+    z-index: 10;
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 20px;
+    border: 2px solid var(--main);
+}
+.search-field {
+    display: flex;
+    align-items: center;
+    height: 38px;
+    border: 2px solid var(--main);
+    border-radius: 48px;
+    font-size: 20px;
+    margin: 0 5px;
+}
+.search-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--main);
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+.search-input {
+    margin: 0 auto;
+    width: 70%;
+    margin-left: 20px;
+    border: none;
+    background: none;
+    outline: none;
+    color: var(--main);
+    line-height: 38px;
+    font-size: 16px;
+}
+::placeholder {
+    color: var(--main);
+}
+.warning {
+    font-size: 16px;
+    margin: 8px 0;
+    text-align: center;
+    height: 18px;
+}
+
+.city-name {
+    text-align: center;
+    font-size: 30px;
+}
+.temperature {
+    text-align: center;
+    font-size: 30px;
+}
+#icon {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto 1px;
+}
+
+h3 {
+    text-align: center;
+}
+.weather {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 14px;
+}
+.pressure, .humidity {
+    text-align: center;
+    font-size: 24px;
+}
+
+span {
+    font-size: 24px;
 }
