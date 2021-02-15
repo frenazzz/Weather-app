@@ -99,3 +99,22 @@ h3 {
 span {
     font-size: 24px;
 }
+
+
+
+@media (max-width: 768px) {
+    span, .humidity,.pressure {
+        font-size: 20px;
+    }
+    .weather, .city-name, .temperature {
+        font-size: 28px;
+    }
+}
+@media (max-width: 425px) {
+    .search-input {
+        font-size: 14px;
+    }
+    .warning {
+        font-size: 14px;
+    }
+}
