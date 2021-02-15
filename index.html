@@ -11,6 +11,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="card">
+        <div class="serch">
+            <div class="search-field">
+                <input class="search-input" type="text" placeholder="enter city name">
+                <button class="search-btn" href="">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <p class="warning"></p>
+        </div>
+        <div class="weather-area">
+            <p class="city-name"></p>
+            <p class="temperature"></p>
+            <canvas id="icon" width="160" height="160"></canvas>
+            <div class="weather-info">
+                <p class="weather">Weather: </p>
+                <p class="pressure">Pressure: <span class="pressure-info"></span></p>
+                <p class="humidity">Humidity: <span class="humidity-info"></span></p>
+            </div>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
